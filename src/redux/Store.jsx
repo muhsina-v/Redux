@@ -1,21 +1,31 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { configureStore,combineReducers } from "@reduxjs/toolkit";
 import counterReducer from './CounderSlice'
 import userReducer from './UserSlice'
+import toggleReducer from './toggleSlice'
+
 
 const store=configureStore({
   reducer:{
     counter:counterReducer,
-    users:userReducer
+    users:userReducer,
+    toggle:toggleReducer,
   },
 })
+//*
 export default store;
 
-// import { configureStore } from "@reduxjs/toolkit";
-// import{countreducer} from './CounderSlice'
+// const rootstor=configureStore({
+//   counter:counterReducer;
+// user:userReducer
+// })
 
 // const store=configureStore({
-//       reducer:{
-//         count:countreducer,
-//       }
+//   reducer:{
+//     rootstor
+//   }
 // })
-// export default store
+
+// export default store;
+
+
+
