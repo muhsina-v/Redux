@@ -11,7 +11,7 @@ const store=configureStore({
     toggle:toggleReducer,
   },
 })
-//*
+
 export default store;
 
 // const rootstor=configureStore({
